@@ -1,0 +1,46 @@
+/* ✅ Keep imports at the very top */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Define your custom base styles here */
+@layer base {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+
+  :root {
+    --primary-color: #414c58;
+    --secondary-color: #e0e7eb;
+    --background-color: #fcfcfc;
+    --text-primary: #2c323a;
+    --text-secondary: #6b7280;
+    --accent-color: #a8b4c0;
+    --border-radius-none: 0;
+    --border-radius-sm: 0.125rem;
+    --border-radius-md: 0.375rem;
+    --border-radius-lg: 0.5rem;
+    --border-radius-xl: 0.75rem;
+    --border-radius-2xl: 1rem;
+    --border-radius-3xl: 1.5rem;
+    --border-radius-full: 9999px;
+  }
+
+  body {
+    font-family: "Manrope", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+  }
+}
