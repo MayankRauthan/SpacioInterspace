@@ -7,6 +7,8 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import ClientLogos from '../components/ClientLogos';
+
+
 import './index.css';
 
 const App = () => {
