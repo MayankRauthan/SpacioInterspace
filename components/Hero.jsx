@@ -1,16 +1,28 @@
-import React, { useState } from "react";
 
-export default function Hero() {
+import React, { useState } from "react";
+import useTypewriter from "./useTypewriter";
+
+export default function Hero(props) {
   const [showStats, setShowStats] = useState(false);
 
+  const typewriter = useTypewriter(["Design", "Architect", "Planning"], 120, 1200);
   return (
-    <section className="w-full flex flex-col items-center justify-center px-6 md:px-18 lg:px-0 py-8">
+    <section className="w-full flex flex-col items-center justify-center px-6 md:px-18 lg:px-0 py-8" {...props}>
       
       {/* Hero Content */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl">
         {/* Left Side */}
         <div className="flex flex-col space-y-6 ">
-          <h2 className="text-4xl md:text-8xl font-bold leading-tight">Interior Design</h2>
+          <h2 className="text-4xl md:text-8xl font-bold leading-tight flex flex-row flex-wrap items-center gap-2">
+            <span>Interior</span>
+            <span
+              className="text-[var(--primary-color)] inline-block"
+              style={{ minWidth: '8ch', transition: 'min-width 0.2s' }}
+            >
+              {typewriter}
+              <span className="border-r-2 border-[var(--primary-color)] animate-pulse ml-1" style={{fontSize: '0.8em'}}></span>
+            </span>
+          </h2>
           <p className="text-gray-600 max-w-lg text-lg text-justify">
             Step into a world where the art of Interior Design is meticulously crafted
             to bring together timeless elegance and cutting-edge modern innovation,
