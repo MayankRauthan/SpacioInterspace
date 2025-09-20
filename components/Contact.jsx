@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+// import emailjs from '@emailjs/browser';
 import toast from "react-hot-toast";
 
 const Contact = (props) => {
@@ -29,8 +30,8 @@ const Contact = (props) => {
 
     setLoading(true);
 
-    emailjs
-      .sendForm(
+    
+      emailjs.sendForm(
         "service_rwg7ssc",   // replace with EmailJS service ID
         "template_rjjm5ki",  // replace with EmailJS template ID
         form.current,
