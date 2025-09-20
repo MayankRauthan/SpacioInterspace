@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Impact = () => {
+const Impact = (props) => {
   return (
-    <section>
+    <section {...props}>
       <h2 className="text-4xl font-bold text-[var(--text-primary)] tracking-tight text-center">Our Impact</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
         <div className="bg-white p-8 rounded-md shadow-sm border border-gray-100 text-center">

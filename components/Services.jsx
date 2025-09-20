@@ -7,9 +7,9 @@ const services = [
   { title: 'Space Planning', description: 'Optimizing space utilization for maximum efficiency and aesthetic appeal.', src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC6YAPH7pdcJ14BQtbaFPlAGdeNlQJOk4qIqNQD6jVzMBrK_4W6yllJpbcJvnPZFhtstjEbL_KwqtaunauK8t3fgp6cFaXG0U4ANDTomEtGJvITDxDWS6X0yYx0o1b2OnyCb3pP8VwTtNvNpsnvxZXLhwhevdUASWgN7KMWm1qexTgRGsd0-Go0J6qyNPszDIptTpxa5cc8xj4spy21SbTGTyA94nI6bXwsEKeexRlK_wOU-R6J7lva1iJGUGIMeQVtDDjdajQFRipA' },
 ];
 
-const Services = () => {
+const Services = (props) => {
   return (
-    <section>
+    <section {...props}>
       <h2 className="text-4xl font-bold text-[var(--text-primary)] tracking-tight text-center">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
         {services.map((service, index) => (

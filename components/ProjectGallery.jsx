@@ -80,7 +80,7 @@ const ProjectGallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section>
+    <section id="projects">
       <h2 className="text-4xl font-bold text-[var(--text-primary)] tracking-tight text-center">
         Our Project Gallery
       </h2>

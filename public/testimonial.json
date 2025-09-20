@@ -1,0 +1,20 @@
+[
+  {
+    "rating": 9.5,
+    "stars": 4,
+    "review": "Excellent services, efficient and left everywhere spotless! Thank You",
+    "author": "Excel Industries Ltd."
+  },
+  {
+    "rating": 9.8,
+    "stars": 5,
+    "review": "Working with Design Co. was a game-changer. Their attention to detail and creative vision transformed my home into a masterpiece!",
+    "author": "Sarah Thompson"
+  },
+  {
+    "rating": 9.2,
+    "stars": 4,
+    "review": "Very professional and timely service. Highly recommended!",
+    "author": "John Carter"
+  }
+]
