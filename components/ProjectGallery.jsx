@@ -14,11 +14,11 @@ const projects = [
     title: 'Modern Meeting Room',
     category: 'Residential',
     images: [
-      '../public/MeetingRoom/Meeting1.jpg',
-      '../public/MeetingRoom/Meeting2.jpg',
-      '../public/MeetingRoom/Meeting3.jpg',
-      '../public/MeetingRoom/Meeting4.jpg',
-      '../public/MeetingRoom/Meeting5.jpg'
+      'meetingroom/meeting1.JPG',
+      ' meetingroom/meeting2.JPG',
+      ' meetingroom/meeting3.JPG',
+      ' meetingroom/meeting4.JPG',
+      ' meetingroom/meeting5.JPG'
 
     ],
   },
@@ -26,55 +26,55 @@ const projects = [
     title: 'Elegant Dining Area',
     category: 'Residential',
     images: [
-     '../public/DinningRoom/Dinning4.jpg',
-     '../public/DinningRoom/Dinning2.jpg',
-     '../public/DinningRoom/Dinning3.jpg',
-     '../public/DinningRoom/Dinning1.jpg',
-     '../public/DinningRoom/Dinning5.jpg'
+     ' dinningroom/dinning4.JPG',
+     ' dinningroom/dinning2.JPG',
+     ' dinningroom/dinning3.JPG',
+     ' dinningroom/dinning1.JPG',
+     ' dinningroom/dinning5.JPG'
     ],
   },
   {
     title: 'Minimalist Bedroom',
     category: 'Residential',
     images: [
-      '../public/Bedroom/Bed4.jpg',
-      '../public/Bedroom/Bed1.jpg',
-      '../public/Bedroom/Bed3.jpg',
-      '../public/Bedroom/Bed2.jpg',
-      '../public/Bedroom/Bed5.jpg'
+      ' bedroom/bed4.JPG',
+      ' bedroom/bed1.JPG',
+      ' bedroom/bed3.JPG',
+      ' bedroom/bed2.JPG',
+      ' bedroom/bed5.JPG'
     ],
   },
   {
     title: 'Drawing Room',
     category: 'Commercial',
     images: [
-      '../public/DrawingRoom/Drawing5.jpg',
-      '../public/DrawingRoom/Drawing3.jpg',
-      '../public/DrawingRoom/Drawing2.jpg',
-      '../public/DrawingRoom/Drawing4.jpg',
-      '../public/DrawingRoom/Drawing1.jpg',
+      ' drawingroom/drawing5.JPG',
+      ' drawingroom/drawing3.JPG',
+      ' drawingroom/drawing2.JPG',
+      ' drawingroom/drawing4.JPG',
+      ' drawingroom/drawing1.JPG',
     ],
   },
   {
     title: 'Luxury Bathroom',
     category: 'Residential',
     images: [
-      '../public/Bathroom/Bathroom1.jpg',
-      '../public/Bathroom/Bathroom2.jpg',
-      '../public/Bathroom/Bathroom3.jpg',
-      '../public/Bathroom/Bathroom4.jpg',
-      '../public/Bathroom/Bathroom5.jpg'
+      ' bathroom/bathroom1.JPG',
+      ' bathroom/bathroom2.JPG',
+      ' bathroom/bathroom3.JPG',
+      ' bathroom/bathroom4.JPG',
+      ' bathroom/bathroom5.JPG'
     ],
   },
   {
     title: 'Workspace',
     category: 'Residential',
     images: [
-      '../public/Workspace/Workspace1.jpg',
-      '../public/Workspace/Workspace2.jpg',
-      '../public/Workspace/Workspace3.jpg',
-      '../public/Workspace/Workspace4.jpg',
-      '../public/Workspace/Workspace5.jpg'
+      ' workspace/workspace1.JPG',
+      ' workspace/workspace2.JPG',
+      ' workspace/workspace3.JPG',
+      ' workspace/workspace4.JPG',
+      'workspace/workspace5.JPG'
     ],
   },
 ];
