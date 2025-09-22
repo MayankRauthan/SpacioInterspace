@@ -11,7 +11,8 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import ClientLogos from '../components/ClientLogos';
-// import { Toaster } from "react-hot-toast"; // if needed
+import { Toaster } from "react-hot-toast"; 
+import WhyUs from '../components/why_us';
 
 import './index.css';
 
@@ -26,6 +27,7 @@ const App = () => {
 
   return (
     <div className="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+      <Toaster position="top-right" reverseOrder={false} />
       <div className="flex-grow">
         <Header data-aos="fade-down" />
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12">
@@ -38,19 +40,21 @@ const App = () => {
           <ProjectGallery data-aos="fade-up" />
           <div className="border-t border-gray-200 my-16"></div>
           
-          <Services data-aos="fade-up" />
+          <WhyUs data-aos="fade-up" />
           <div className="border-t border-gray-200 my-16"></div>
           
-          <Impact data-aos="fade-up" />
+          <Services data-aos="fade-up" />
           <div className="border-t border-gray-200 my-16"></div>
+        
           
           <Testimonial data-aos="fade-up" />
           <div className="border-t border-gray-200 my-16"></div>
           
           <Contact data-aos="fade-up" />
+                <Footer data-aos="fade-in" />
+
         </main>
       </div>
-      <Footer data-aos="fade-in" />
     </div>
   );
 };

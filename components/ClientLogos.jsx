@@ -1,13 +1,13 @@
 import React from 'react';
-
+import Impact from './Impact';
 const clients = [
-  { name: 'United Airlines', src: 'client/United_Airlines.png' },
+  { name: 'United Airlines', src: 'client/United_Airlines.jpg' },
   { name: 'Jaguar', src: 'client/item_2.svg' },
   { name: 'Client Name 3', src: 'client/item_3.jpg' },
   { name: 'Client Name 4', src: 'client/item_4.jpg' },
   { name: 'Client Name 5', src: 'client/item_5.jpg' },
-  { name: 'Client Name 6', src: 'client/item_6.jpg' },
-  { name: 'Client Name 7', src: 'client/item_7.jpg' },
+  { name: 'Client Name 6', src: 'client/item_1.png' },
+  { name: 'Client Name 7', src: 'client/item_7.png' },
 
   // Duplicate for a seamless loop
    { name: 'United Airlines', src: 'client/United_Airlines.png' },
@@ -16,7 +16,7 @@ const clients = [
   { name: 'Client Name 4', src: 'client/item_4.jpg' },
   { name: 'Client Name 5', src: 'client/item_5.jpg' },
   { name: 'Client Name 6', src: 'client/item_6.jpg' },
-  { name: 'Client Name 7', src: 'client/item_7.jpg' },
+  { name: 'Client Name 7', src: 'client/item_1.png' },
 ];
 
 const ClientLogos = (props) => {
@@ -34,11 +34,12 @@ const ClientLogos = (props) => {
                 <div className="bg-white p-4 rounded-lg  w-40 h-40 flex items-center justify-center">
                   <img alt={client.name} className="max-w-32 max-h-32"  src={client.src} />
                 </div>
-                <p className="mt-3 font-semibold text-gray-700 text-sm">{client.name}</p>
               </div>
             ))}
           </div>
         </div>
+          <Impact className="mt-20"/>
+
       </div>
     </section>
   );

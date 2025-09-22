@@ -1,10 +1,10 @@
-/* ✅ Keep imports at the very top */
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* ✅ Define your custom base styles here */
 @layer base {

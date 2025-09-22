@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Star } from "lucide-react";
 
-const TestimonialCarousel = (props) => {
+const Testimonial = (props) => {
   const [testimonials, setTestimonials] = useState([]);
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000 })]);
 
@@ -14,32 +14,45 @@ const TestimonialCarousel = (props) => {
   }, []);
 
   return (
-    <section id="testimonials" className="max-w-4xl mx-auto py-12 text-center" {...props}>
-      <h2 className="text-4xl font-bold text-gray-800 tracking-tight mb-8">
+    <section id="testimonials" className="max-w-4xl h-full mx-auto pt-10 px-6 text-center" {...props}>
+      <h2 className="text-4xl font-bold text-gray-800 tracking-tight mb-12">
         What Our Clients Say
       </h2>
 
-      <div className="overflow-hidden" ref={emblaRef}>
+      <div className="overflow-hidden py-10" ref={emblaRef}>
         <div className="flex">
           {testimonials.map((t, index) => (
-            <div key={index} className="flex-[0_0_100%] px-6">
-              <div className="bg-white shadow-lg rounded-2xl p-8">
-                <div className="text-5xl font-bold text-green-600">{t.rating}</div>
-                <div className="flex justify-center mt-2 mb-4">
+            <div key={index} className="flex-[0_0_100%] h-full px-6">
+              <div className="bg-white shadow-xl rounded-3xl p-5 relative flex flex-col items-center" >
+                
+                {/* Rating Badge */}
+                <span className="text-black/500 px-4 py-0 text-8xl ">
+                  ”
+                </span>
+
+                
+
+                {/* Review with decorative quote */}
+                <p className="text-xl text-gray-700 italic leading-relaxed relative">
+                  {t.review}
+                </p>
+                
+                {/* Author */}
+                <p className="mt-6 font-semibold text-lg text-gray-900">{t.author}</p>
+                <p className="text-sm text-gray-500">{t.position || ""}</p>
+
+                {/* Stars */}
+                <div className="flex justify-center mt-2 mb-6">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star
                       key={i}
-                      size={24}
+                      size={22}
                       className={`${
-                        i < t.stars ? "text-blue-500 fill-blue-500" : "text-gray-300"
+                        i < t.stars ? "text-yellow-400 fill-yellow-400" : "text-gray-300"
                       }`}
                     />
                   ))}
                 </div>
-                <p className="text-lg text-gray-600 italic leading-relaxed">
-                  "{t.review}"
-                </p>
-                <p className="mt-4 font-semibold text-red-600">{t.author}</p>
               </div>
             </div>
           ))}
@@ -49,4 +62,4 @@ const TestimonialCarousel = (props) => {
   );
 };
 
-export default TestimonialCarousel;
+export default Testimonial;
