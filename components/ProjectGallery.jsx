@@ -8,70 +8,73 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 
+
 const projects = [
   {
-    title: 'Modern Living Room',
+    title: 'Modern Meeting Room',
     category: 'Residential',
     images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAwC8W4490L_EgzOqKBDrtsp__eTOHRbJ3_TNVcIEfz0oo0IoCLsMJcpZTGKI1cAel_RolqiEjHPvogTL0wayAHniBr5HyfJ7O-kol-V0LNVm53WTSH_ugnSh854NM-q_nsEbHIB_d7kTQbVINzpbDiK-0ZmxvAXgk20JifHyfBAZHM0inApfGyXXW6z_MiV-wfN3Yf23VfJJEUVKsOIZL9qtQlnf8FU_PU3iT-XN69qFyTwN1RDrHMucNOj2bqtGN-SN6yfLLcv2ao',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAwC8W4490L_EgzOqKBDrtsp__eTOHRbJ3_TNVcIEfz0oo0IoCLsMJcpZTGKI1cAel_RolqiEjHPvogTL0wayAHniBr5HyfJ7O-kol-V0LNVm53WTSH_ugnSh854NM-q_nsEbHIB_d7kTQbVINzpbDiK-0ZmxvAXgk20JifHyfBAZHM0inApfGyXXW6z_MiV-wfN3Yf23VfJJEUVKsOIZL9qtQlnf8FU_PU3iT-XN69qFyTwN1RDrHMucNOj2bqtGN-SN6yfLLcv2ao',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
+      '../public/MeetingRoom/Meeting1.jpg',
+      '../public/MeetingRoom/Meeting2.jpg',
+      '../public/MeetingRoom/Meeting3.jpg',
+      '../public/MeetingRoom/Meeting4.jpg',
+      '../public/MeetingRoom/Meeting5.jpg'
+
     ],
   },
   {
     title: 'Elegant Dining Area',
     category: 'Residential',
     images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBgP-Lvepw0jKpEw7Z6Ug2KTOOZcxfhGapHRJK-RfHrT2OoI0OTnLWJYG0ifj3ke7m1T07FBfnTUxEJLBPlomwgC_N5Zpdekr2BxOneM5DU7FWmdXCKHNfbKBnY9HWpQU_rEFSXaWJ2c2RaTHuHbHeRvGvuJvyyywFnHy4_lm_6vPLw8QeUBe81l6cdkUl8CDCBgDGEIdH3zQuFsVvd0Dt49s70IUhzlaoaV2Ro2twth0isLsWqQjfcvMB2iI4jWNBXXuR2Gw7mZrB1',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
+     '../public/DinningRoom/Dinning4.jpg',
+     '../public/DinningRoom/Dinning2.jpg',
+     '../public/DinningRoom/Dinning3.jpg',
+     '../public/DinningRoom/Dinning1.jpg',
+     '../public/DinningRoom/Dinning5.jpg'
     ],
   },
   {
     title: 'Minimalist Bedroom',
     category: 'Residential',
     images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
+      '../public/Bedroom/Bed4.jpg',
+      '../public/Bedroom/Bed1.jpg',
+      '../public/Bedroom/Bed3.jpg',
+      '../public/Bedroom/Bed2.jpg',
+      '../public/Bedroom/Bed5.jpg'
     ],
   },
   {
-    title: 'Chic Home Office',
+    title: 'Drawing Room',
     category: 'Commercial',
     images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuB36alxvaNQhEHYQ6nA85qfD_tewwBUwqmrgWlIq36Qv6wWD9Qz67UogzYsgyoVeezwvLFAoagS_R1MjlVMPgqATPrmceOKA6ps7o2wcnTHToQRvcInaIMZlHMnfrK59fuPf96_oq-xav75xotTwDlxWCjB-S63vWhz7JMh3jyjzlso232O3opbrU9SDJOri9uNUpZCKkbJYZXpRWR7KpFUdmAgm7XEfNrY4cfztZQEalVZdAT2fT0jpykclgKHDwDqIaQW-FNIKsWf',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R','https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
+      '../public/DrawingRoom/Drawing5.jpg',
+      '../public/DrawingRoom/Drawing3.jpg',
+      '../public/DrawingRoom/Drawing2.jpg',
+      '../public/DrawingRoom/Drawing4.jpg',
+      '../public/DrawingRoom/Drawing1.jpg',
     ],
   },
   {
     title: 'Luxury Bathroom',
     category: 'Residential',
     images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCtrbedUoOkuaiazRKu_umvCiu_LzhywX_GrQVn4INZXWZkbaj2l3jAGvXUVLxsJCSI5x8H_h5Tyafm8sh5002Rwv1y8LHx8K3jhesSI6rN4Oj465GoBUZwNdUhBsvOqGAJQ7NdeNLvxSS_f0wMh0EDPbod9KiPppWPM0Z5GV2WzNtzZLyvqGfTZh6GilgkOM933fvkah0GwCl51tLHGtIgMBAxzJe3HC3M4kc1hmNjyGEYZsWbusMioDLc2t9rAduPv0Ej6Mcdr9GR',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R','https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
+      '../public/Bathroom/Bathroom1.jpg',
+      '../public/Bathroom/Bathroom2.jpg',
+      '../public/Bathroom/Bathroom3.jpg',
+      '../public/Bathroom/Bathroom4.jpg',
+      '../public/Bathroom/Bathroom5.jpg'
     ],
   },
   {
-    title: 'Cozy Reading Nook',
+    title: 'Workspace',
     category: 'Residential',
     images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDSGgIOJMgOWAVSagbhKhD0BUU6pjPmkFjx6BevnD5NvFB-_STxzZwtlzV47gtqU6spj5RXeoVUqOOiBfMzD1vab_GuF1pKQO2Pxw69OB5sdUU7uftI2NoQ2AVmAOASL3HU2E2Luu52icL01kw_5MdL8SzpEhbMzlci5vXuyPA6ftoHtlLQNY9LNv3YaauD9OjosnCLnbZICh71_ZaxyBY89ppniX1UFmeXlJ8rZWcUusxjO3FeDomhY_KvbkXpXIlyd_Wf7Z0HDpqY',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcFe0rc3JzijNrKwV7vZQugygHIxVWmH1N74j2ecAuZ3qktCHuYLRVAfFEsU6xRzL7YAQ_4Utp7NKXmGe3ILTRA2docsOwpceEpAUsxHcnulWd40H7hKVzLMIG3_4wsNymYafDUqeTYCG0KftHnZrFXvphQ62tOdQMNWhgS2g3p-MZd8rTqjI9B56dRtgAoLeBVDEuEvtAM0ECGjzq2nClb0_HIX1NboQvU3CV6JkwAL3FAlQP_1osL4u-5IqFxbajVfbBz-EY2R',
+      '../public/Workspace/Workspace1.jpg',
+      '../public/Workspace/Workspace2.jpg',
+      '../public/Workspace/Workspace3.jpg',
+      '../public/Workspace/Workspace4.jpg',
+      '../public/Workspace/Workspace5.jpg'
     ],
   },
 ];
