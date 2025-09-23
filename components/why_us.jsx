@@ -57,7 +57,7 @@ const WhyUs = () => (
           <div key={idx} className="flex flex-col items-center">
             <div className="mb-4">{item.icon}</div>
             <h3 className="text-xl font-semibold mb-2 text-[var(--text-secondary)] uppercase text-center">{item.title}</h3>
-            <p className="flex item-center justify-center text-gray-500 text-base font-medium text-start">{item.description}</p>
+            <p className="flex item-center justify-center text-gray-500 text-base font-medium ">{item.description}</p>
           </div>
         ))}
        
