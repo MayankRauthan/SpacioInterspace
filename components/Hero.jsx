@@ -17,10 +17,10 @@ export default function Hero(props) {
             <span>Interior</span>
             <span
               className="text-[var(--primary-color)] inline-block"
-              style={{ minWidth: '8ch', transition: 'min-width 0.2s' }}
+              style={{ minWidth: '8ch', transition: 'min-width 0.2s' }} 
             >
               {typewriter}
-              <span className="border-r-2 border-[var(--primary-color)] animate-pulse ml-1" style={{fontSize: '0.8em'}}></span>
+              <span className="border-r-2 border-[var(--primary-color)] animate-pulse ml-1" style={{fontSize: '0.8em'}}></span> 
             </span>
           </h2>
           <p className="text-gray-600 max-w-lg text-lg text-justify">
@@ -29,13 +29,14 @@ export default function Hero(props) {
             allowing you to transform your living spaces into the epitome of luxury
             and sophistication.
           </p>
+          <div className="flex w-full justify-center md:justify-start">
           <button
             onClick={() => setShowStats(true)}
-            className="bg-black text-white px-6 py-3 rounded-md w-fit"
+            className="bg-black text-white px-6 py-3 rounded-md w-fit "
           >
             Start Project
           </button>
-
+          </div>
           {/* Stats */}
           {showStats && (
             <div className="flex space-x-8 mt-8">
@@ -60,7 +61,7 @@ export default function Hero(props) {
           <img
             src="image1.png"
             alt="Interior Chair"
-            className="rounded-lg shadow-md w-80 md:w-104 md:h-60"
+            className="rounded-lg shadow-md h-60 w-60 md:w-104 md:h-60"
           />
           <div className="flex justify-center md:justify-start md:pr-25">
             <img
@@ -70,7 +71,7 @@ export default function Hero(props) {
             <img
               src="image2.png"
               alt="Interior Sofa"
-              className="rounded-lg shadow-md md:w-104 md:h-60 z-1"
+              className="rounded-lg shadow-md h-60 w-60 md:w-104 md:h-60 z-1"
             />
             
           </div>

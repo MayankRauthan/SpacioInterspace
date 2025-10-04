@@ -3,7 +3,7 @@ import AnimatedNumber from './AnimatedNumber';
 const Impact = (props) => {
   return (
     <section {...props}>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <div className="flex flex-row overflow-auto justify-center items-center p-4 md:grid md:grid-cols-3 gap-8 mt-10">
         <div className="bg-white p-8 rounded-md shadow-sm border border-gray-100 text-center">
           <p className="text-4xl font-extrabold text-[var(--primary-color)]"><AnimatedNumber endValue={400} duration={2.5} separator="," />+</p>
           <p className="text-lg text-[var(--text-secondary)] mt-2">Projects Completed</p>
