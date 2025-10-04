@@ -52,14 +52,14 @@ const Contact = (props) => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100" id="contact" {...props}>
+    <section className="bg-gradient-to-br " id="contact" {...props}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-[var(--text-primary)]">Let’s Connect</h2>
           <p className="mt-4 text-lg text-[var(--text-secondary)] max-w-xl mx-auto">
             Have an idea or project in mind? Drop a message below and I’ll get back to you soon.
           </p>
-        </div>
+        </div> */}
 
         <div className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8 sm:p-12 border border-gray-100">
           <form ref={form} onSubmit={sendEmail} className="space-y-6">

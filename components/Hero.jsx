@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import useTypewriter from "./useTypewriter";
+import Contact from "./Contact";
 
 export default function Hero(props) {
   const [showStats, setShowStats] = useState(false);
@@ -57,7 +58,7 @@ export default function Hero(props) {
         </div>
 
         {/* Right Side Images */}
-        <div className="relative flex flex-col items-center lg:items-end space-y-6 ">
+        <div className="relative flex flex-col items-center lg:items-end space-y-6 lg:hidden ">
           <img
             src="image1.png"
             alt="Interior Chair"
@@ -76,6 +77,10 @@ export default function Hero(props) {
             
           </div>
         </div>
+        <div className=" lg:block hidden ">
+            <Contact/>
+        </div>
+        
       </div>
     </section>
   );
