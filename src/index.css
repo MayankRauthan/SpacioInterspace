@@ -22,12 +22,15 @@
   }
 
   :root {
-    --primary-color: #414c58;
-    --secondary-color: #e0e7eb;
-    --background-color: #fcfcfc;
-    --text-primary: #2c323a;
-    --text-secondary: #6b7280;
-    --accent-color: #a8b4c0;
+    --primary-color: #92D050;
+    --secondary-color: #f6f9f6;
+    --background-color: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4d4d4d;
+    --accent-color: #92D050;
+    --accent-teal: #00796b;
+    --section-bg: #f6f9f6;
+    --card-bg: #f9fafb;
     --border-radius-none: 0;
     --border-radius-sm: 0.125rem;
     --border-radius-md: 0.375rem;
@@ -38,9 +41,18 @@
     --border-radius-full: 9999px;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: "Manrope", sans-serif;
     background-color: var(--background-color);
     color: var(--text-primary);
+  }
+
+  /* Ensure page starts at top on load */
+  html, body {
+    overflow-x: hidden;
   }
 }

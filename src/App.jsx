@@ -11,6 +11,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import ClientLogos from '../components/ClientLogos';
+import ProcessSteps from '../components/ProcessSteps';
 import { Toaster } from "react-hot-toast";
 import WhyUs from '../components/why_us';
 
@@ -18,53 +19,101 @@ import './index.css';
 
 const App = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration (ms)
-      once: true,     // whether animation should happen only once
-      easing: "ease-in-out",
-    });
+    // Force scroll to top immediately on mount
+    const scrollToTop = () => {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      window.scrollTo(0, 0);
+    };
+    
+    scrollToTop();
+    
+    // Also ensure scroll to top after window loads
+    window.addEventListener('load', scrollToTop);
+    
+    // Initialize AOS after ensuring we're at the top
+    setTimeout(() => {
+      AOS.init({
+        duration: 1000, // animation duration (ms)
+        once: true,     // whether animation should happen only once
+        easing: "ease-in-out",
+      });
+    }, 100);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('load', scrollToTop);
+    };
   }, []);
 
   return (
-    <div className="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+    <div className="md relative flex size-full min-h-screen flex-col overflow-x-hidden bg-white">
       <Toaster position="top-right" reverseOrder={false} />
-      <div className="flex-grow">
-        <Header data-aos="fade-down" />
-        <main className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12">
-          <Hero data-aos="fade-up" />
-          <div className="border-t border-gray-200 my-16"></div>
-
-          <ClientLogos data-aos="fade-up" />
-          <div className="border-t border-gray-200 my-16"></div>
-
-          <ProjectGallery data-aos="fade-up" />
-          <div className="border-t border-gray-200 my-16"></div>
-
-          <WhyUs data-aos="fade-up" />
-          <div className="border-t border-gray-200 my-16"></div>
-
-          <Services data-aos="fade-up" />
-          <div className="border-t border-gray-200 my-16"></div>
-
-
-          <Testimonial data-aos="fade-up" />
-          <div className="border-t border-gray-200 my-16"></div>
-
-
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-[var(--text-primary)]">Let’s Connect</h2>
-            <p className="mt-4 text-lg text-[var(--text-secondary)] max-w-xl mx-auto">
-              Have an idea or project in mind? Drop a message below and I’ll get back to you soon.
-            </p>
-            <div className=" py-20">
-              <Contact data-aos="fade-up" />
-            </div>
+      
+      {/* Header - Fixed/Sticky */}
+      <Header data-aos="fade-down" />
+      
+      <main className="flex-grow">
+        {/* Hero Section - Full width with custom background */}
+        <section className="bg-[var(--section-bg)] py-16 ">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <Hero data-aos="fade-up" />
           </div>
+        </section>
 
-          <Footer data-aos="fade-in" />
+        {/* Client Logos Section - White background for contrast */}
+        <section className="bg-white py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <ClientLogos data-aos="fade-up" />
+          </div>
+        </section>
 
-        </main>
-      </div>
+        {/* Project Gallery Section - Light background */}
+        <section className="bg-[var(--section-bg)] py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <ProjectGallery data-aos="fade-up" />
+          </div>
+        </section>
+
+        {/* Why Us Section - White background for emphasis */}
+        <section className="bg-white py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <WhyUs data-aos="fade-up" />
+          </div>
+        </section>
+
+        {/* Services Section - Light background */}
+        <section className="bg-[var(--section-bg)] py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <Services data-aos="fade-up" />
+          </div>
+        </section>
+
+        {/* Process Steps Section - White background */}
+        <section className="bg-white py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <ProcessSteps data-aos="fade-up" />
+          </div>
+        </section>
+
+        {/* Testimonial Section - Light background */}
+        <section className="bg-[var(--section-bg)] py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <Testimonial data-aos="fade-up" />
+          </div>
+        </section>
+
+        {/* Contact Section - Only visible on mobile */}
+        <section className="bg-white py-20 block md:hidden">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            
+            <Contact data-aos="fade-up" />
+          </div>
+        </section>
+      </main>
+
+      {/* Footer - Full width dark section */}
+      <Footer data-aos="fade-in" />
     </div>
   );
 };

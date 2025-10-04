@@ -26,7 +26,7 @@ const Testimonial = (props) => {
               <div className="bg-white shadow-xl rounded-3xl p-5 relative flex flex-col items-center" >
                 
                 {/* Rating Badge */}
-                <span className="text-black/500 px-4 py-0 text-8xl ">
+                <span className="text-[var(--accent-color)] px-4 py-0 text-8xl ">
                   ”
                 </span>
 
@@ -48,7 +48,7 @@ const Testimonial = (props) => {
                       key={i}
                       size={22}
                       className={`${
-                        i < t.stars ? "text-yellow-400 fill-yellow-400" : "text-gray-300"
+                        i < t.stars ? "text-[var(--accent-color)] fill-[var(--accent-color)]" : "text-gray-300"
                       }`}
                     />
                   ))}

@@ -4,7 +4,7 @@ const whyUsData = [
   {
     icon: (
       // Door icon
-      <svg width="32" height="32" fill="none" stroke="#414c58" strokeWidth="2" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="16" cy="12" r="1.5"/></svg>
+      <svg width="32" height="32" fill="none" stroke="#4caf50" strokeWidth="2" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="16" cy="12" r="1.5"/></svg>
     ),
     title: "ONE DOOR SOLUTION",
     description:
@@ -13,7 +13,7 @@ const whyUsData = [
   {
     icon: (
       // Award/medal/star icon
-      <svg width="32" height="32" fill="none" stroke="#414c58" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M12 13v7M9 20h6"/></svg>
+      <svg width="32" height="32" fill="none" stroke="#4caf50" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M12 13v7M9 20h6"/></svg>
     ),
     title: "INDUSTRY EXPERT",
     description:
@@ -22,7 +22,7 @@ const whyUsData = [
   {
     icon: (
       // Clock/fast icon
-      <svg width="32" height="32" fill="none" stroke="#414c58" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <svg width="32" height="32" fill="none" stroke="#4caf50" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
     ),
     title: "ON TIME DELIVERY",
     description:
@@ -31,7 +31,7 @@ const whyUsData = [
   {
     icon: (
       // Diamond/quality icon
-      <svg width="32" height="32" fill="none" stroke="#414c58" strokeWidth="2" viewBox="0 0 24 24"><polygon points="12 2 22 9 12 22 2 9 12 2"/></svg>
+      <svg width="32" height="32" fill="none" stroke="#4caf50" strokeWidth="2" viewBox="0 0 24 24"><polygon points="12 2 22 9 12 22 2 9 12 2"/></svg>
     ),
     title: "EXCEPTIONAL QUALITY",
     description:
@@ -40,7 +40,7 @@ const whyUsData = [
   {
     icon: (
       // Eye/transparency icon
-      <svg width="32" height="32" fill="none" stroke="#414c58" strokeWidth="2" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="6"/><circle cx="12" cy="12" r="3"/></svg>
+      <svg width="32" height="32" fill="none" stroke="#4caf50" strokeWidth="2" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="6"/><circle cx="12" cy="12" r="3"/></svg>
     ),
     title: "TRANSPARENCY",
     description:
@@ -48,22 +48,34 @@ const whyUsData = [
   },
 ];
 
-const WhyUs = () => (
-  <section className="py-20 bg-white" id="why-us">
-    <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-      <h2 className="text-4xl font-bold mb-4 text-[var(--text-primary)]">Reason to work with Us</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-12">
-        {whyUsData.map((item, idx) => (
-          <div key={idx} className="flex flex-col items-center">
-            <div className="mb-4">{item.icon}</div>
-            <h3 className="text-xl font-semibold mb-2 text-[var(--text-secondary)] uppercase text-center">{item.title}</h3>
-            <p className="flex item-center justify-center text-gray-500 text-base font-medium ">{item.description}</p>
-          </div>
-        ))}
-       
-      </div>
+const WhyUs = (props) => (
+  <section id="why-us" {...props}>
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-[var(--text-primary)] mb-4">
+        Reason to work with Us
+      </h2>
+      <p className="text-lg text-[var(--text-secondary)] max-w-3xl mx-auto">
+        Discover what sets us apart in the interior design industry and why clients choose us for their most important projects.
+      </p>
     </div>
 
+    {/* Why Us Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+      {whyUsData.map((item, idx) => (
+        <div key={idx} className="flex flex-col items-center text-center group hover:transform hover:scale-105 transition-all duration-300">
+          <div className="mb-6 p-4 rounded-full bg-white/90 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+            {item.icon}
+          </div>
+          <h3 className="text-xl font-semibold mb-4 text-[var(--text-primary)] uppercase leading-tight min-h-[3rem] flex items-center justify-center">
+            {item.title}
+          </h3>
+          <p className="text-base text-[var(--text-secondary)] leading-relaxed max-w-xs">
+            {item.description}
+          </p>
+        </div>
+      ))}
+    </div>
   </section>
 );
 

@@ -8,7 +8,7 @@ export default function Hero(props) {
 
   const typewriter = useTypewriter(["Design", "Architect", "Planning"], 120, 1200);
   return (
-    <section className="w-full flex flex-col items-center justify-center px-6 md:px-18 lg:px-0 py-8" {...props}>
+    <section className=" w-full flex flex-col items-center justify-center px-6 md:px-18 lg:px-0 py-8" {...props}>
       
       {/* Hero Content */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl">
@@ -24,37 +24,16 @@ export default function Hero(props) {
               <span className="border-r-2 border-[var(--primary-color)] animate-pulse ml-1" style={{fontSize: '0.8em'}}></span> 
             </span>
           </h2>
-          <p className="text-gray-600 max-w-lg text-lg text-justify">
+          <p className="text-[var(--text-secondary)] max-w-lg text-lg text-justify">
             Step into a world where the art of Interior Design is meticulously crafted
             to bring together timeless elegance and cutting-edge modern innovation,
             allowing you to transform your living spaces into the epitome of luxury
             and sophistication.
           </p>
           <div className="flex w-full justify-center md:justify-start">
-          <button
-            onClick={() => setShowStats(true)}
-            className="bg-black text-white px-6 py-3 rounded-md w-fit "
-          >
-            Start Project
-          </button>
+          
           </div>
           {/* Stats */}
-          {showStats && (
-            <div className="flex space-x-8 mt-8">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold">400+</h3>
-                <p className="text-gray-500">Project Complete</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-bold">600+</h3>
-                <p className="text-gray-500">Satisfied Clients</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-bold">100+</h3>
-                <p className="text-gray-500">Unique Styles</p>
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Right Side Images */}
