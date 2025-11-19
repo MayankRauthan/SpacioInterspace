@@ -44,7 +44,7 @@ const Header = (props) => {
             aria-label="Spacio Interspace Home"
           >
             <div className=" text-[var(--primary-color)] transition-transform duration-300 group-hover:scale-110 group-active:scale-95">
-             <img src="/logo.png" alt="Spacio Interspace Logo" className="h-10 w-20 object-center" />
+             <img src="/logo.png" alt="Spacio Interspace Logo" className="h-10 w-30 object-center" />
             </div>
             
           </div>

@@ -52,6 +52,7 @@ const ClientLogos = (props) => {
           <Impact className="mt-20"/>
 
       </div>
+      
     </section>
   );
 };
